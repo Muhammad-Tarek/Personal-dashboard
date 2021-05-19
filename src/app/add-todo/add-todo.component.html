@@ -1,0 +1,23 @@
+<div class="add-todo-wrapper container has-blurred-white-bg">
+  <h2 class="is-bold">Add Todo</h2>
+  <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+    <div class="form-field">
+      <input
+        class="textbox"
+        type="text"
+        placeholder="Enter todo text..."
+        ngModel
+        name="text"
+        required
+        #text="ngModel"
+      />
+      <p *ngIf="text.touched && !text.valid">
+        Please enter some text for this todo!
+      </p>
+    </div>
+    <div class="btns-container">
+      <a routerLink="../" class="btn">Cancel</a>
+      <button class="btn align-end">Create Todo</button>
+    </div>
+  </form>
+</div>

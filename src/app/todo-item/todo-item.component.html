@@ -1,0 +1,15 @@
+<div class="todo-item" [ngClass]="{ completed: todo.completed === true }">
+  <div class="check-box">
+    <fa-icon [icon]="faCheck"></fa-icon>
+  </div>
+  <p class="todo-text">{{ todo.text }}</p>
+
+  <div class="todo-item-actions">
+    <div class="btn todo-item-action-btn" (click)="onEditClick($event)">
+      <fa-icon [icon]="faPen"></fa-icon>
+    </div>
+    <div class="btn todo-item-action-btn" (click)="onDeleteClick($event)">
+      <fa-icon [icon]="faTrash"></fa-icon>
+    </div>
+  </div>
+</div>

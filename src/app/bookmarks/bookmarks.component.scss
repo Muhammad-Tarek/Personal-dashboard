@@ -1,0 +1,22 @@
+.bookmarks-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.bookmark-tiles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.add-btn fa-icon {
+  margin-right: 5px;
+  margin-left: -3px;
+}
+
+.manage-btn fa-icon {
+  margin-right: 7px;
+  margin-left: -3px;
+}
